@@ -49,14 +49,14 @@
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Site Anahtar Kelime<span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input value="<?php echo $ayarcek['ayar_keywords'] ?>" type="text" id="first-name" name="	ayar_keywords" required="required" class="form-control col-md-7 col-xs-12">
+                          <input value="<?php echo $ayarcek['ayar_keywords'] ?>" type="text" id="first-name" name="ayar_keywords" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Site Yazar<span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input value="<?php echo $ayarcek['ayar_author'] ?>" type="text" id="first-name" name="	ayar_author" required="required" class="form-control col-md-7 col-xs-12">
+                          <input value="<?php echo $ayarcek['ayar_author'] ?>" type="text" id="first-name" name="ayar_author" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
                      

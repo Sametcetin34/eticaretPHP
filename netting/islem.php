@@ -3,7 +3,9 @@ include("baglan.php");
 
 if (isset($_POST["genelayarkaydet"])) {
 
-    $ayarkaydet=$db->prepare("UPDATE ayar SET 
+    //Tablo güncelleme işlemi
+
+$ayarkaydet=$db->prepare("UPDATE ayar SET 
     
     ayar_title=:ayar_title,
     ayar_description=:ayar_description,
@@ -12,23 +14,22 @@ if (isset($_POST["genelayarkaydet"])) {
     WHERE ayar_id=0");
 
 
-$ayarkaydet->execute(array(
+$update=$ayarkaydet->execute(array(
     'ayar_title'=> $_POST['ayar_title'],
     'ayar_description'=> $_POST['ayar_description'],
     'ayar_keywords'=> $_POST['ayar_keywords'],
     'ayar_author'=> $_POST['ayar_author']
 ));
 
+
 if ($update) {
     echo "güncelleme başarılı";
-}   
+}   else{
+
+    echo "güncelleme başarısız";
+}
    
   
 }
-
-
-
-
-
 
 ?>
