@@ -3,7 +3,7 @@ include("baglan.php");
 
 if (isset($_POST["genelayarkaydet"])) {
 
-    //Tablo güncelleme işlemi
+    //Tablo güncelleme işlemi//
 
 $ayarkaydet=$db->prepare("UPDATE ayar SET 
     
